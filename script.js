@@ -43,11 +43,13 @@ function debut(){
     bouton_debut.setAttribute('style', 'background-color:#d2d2d2;')
     bouton_reset.disabled = false
     bouton_reset.setAttribute('style', 'background-color:#50C7C7;')
+    bouton_debut.innerText = 'Commencer'
 }
 
 function pause(){
     clearInterval(interval)
     bouton_debut.disabled = false
+    bouton_debut.innerText = 'Continuer'
     bouton_debut.setAttribute('style', 'background-color:#50C7C7;')
 }
 
@@ -62,4 +64,5 @@ function reset(){
     bouton_reset.disabled = true
     bouton_reset.setAttribute('style', 'background-color:#d2d2d2;')
     ms = 0, sec = 0, min = 0, h = 0
+    bouton_debut.innerText = 'Commencer'
 }
